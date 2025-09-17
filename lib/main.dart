@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatapp_clone/screen/login/loginscreen.dart';
 import '../screen/splash/splash.dart';
 
 void main() {
@@ -16,8 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0xff00a884)),
         useMaterial3: false,
+        fontFamily: "Regular",
       ),
-      home: const SplashScreen(),
+      // home: const SplashScreen(),
+      home: Loginscreen(),
     );
   }
 }
