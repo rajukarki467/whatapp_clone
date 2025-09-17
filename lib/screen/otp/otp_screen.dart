@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatapp_clone/screen/profile/profile_screen.dart';
 import 'package:whatapp_clone/widgets/uihelper.dart';
 
 class OtpScreen extends StatelessWidget {
@@ -64,7 +65,12 @@ class OtpScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: UiHelper.CustomButton(
-        callback: () {},
+        callback: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => ProfileScreen()),
+          );
+        },
         buttonname: "Next",
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,

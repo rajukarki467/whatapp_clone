@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatapp_clone/screen/login/loginscreen.dart';
+import 'package:whatapp_clone/screen/profile/profile_screen.dart';
 import '../screen/splash/splash.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "Regular",
       ),
       // home: const SplashScreen(),
-      home: Loginscreen(),
+      home: ProfileScreen(),
     );
   }
 }
