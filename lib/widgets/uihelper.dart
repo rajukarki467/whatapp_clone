@@ -1,0 +1,3 @@
+class UiHelper {
+  static Custom
+}
