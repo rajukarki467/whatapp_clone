@@ -40,16 +40,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
               onTap: () {
                 _openBotton(context);
               },
-              child: CircleAvatar(
-                radius: 80,
-                backgroundColor: Color(0xffd9d9d9),
-                child: Image.asset(
-                  'assets/images/photo-camera 1.png',
-                  height: 50,
-                  fit: BoxFit.cover,
-                ),
-              ),
+              child: pickedimage == null
+                  ? CircleAvatar(
+                      radius: 80,
+                      backgroundColor: Color(0xffd9d9d9),
+                      child: Image.asset(
+                        'assets/images/photo-camera 1.png',
+                        height: 50,
+                        fit: BoxFit.cover,
+                      ),
+                    )
+                  : CircleAvatar(
+                      radius: 80,
+                      backgroundImage: FileImage(pickedimage!),
+                    ),
             ),
+
             SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
