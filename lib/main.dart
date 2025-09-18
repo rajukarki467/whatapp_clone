@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import '../screen/home/home_screen.dart';
-import '../screen/login/loginscreen.dart';
-import '../screen/profile/profile_screen.dart';
 import '../screen/splash/splash.dart';
 
 void main() {
@@ -21,8 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: false,
         fontFamily: "Regular",
       ),
-      // home: const SplashScreen(),
-      home: HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }
